@@ -126,7 +126,7 @@ a:hover{
 #container li{
 
 	float: left;
-	height: 200px;
+	height: auto;
 	list-style: none;
 	margin-top : 50px;
 	position: relative;
@@ -134,9 +134,8 @@ a:hover{
 	border-top: 1px solid rgb(207, 207, 207);
 	border-left: 1px solid rgb(207, 207, 207);
 	border-bottom: 1px solid rgb(207, 207, 207);
-
-	
 }
+#container li img{width: 100%;}
 #container li:nth-child(4), 
 #container li:nth-child(8){border-right:1px solid rgb(207, 207, 207);}
 #container li:last-child{margin-bottom: 150px; }

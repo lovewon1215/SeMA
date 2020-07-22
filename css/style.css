@@ -9,34 +9,38 @@
 #header .inner .logo{width: 170px; height: 95px; 
                      float: left; margin-left: 30px;
                      margin-top: 10px;}
+#header .inner .logo img{width: 100%;}
 #header .inner nav{float: left; margin-left: 90px; margin-top: 40px; position: relative;}
-#header .inner nav li{float: left; margin-right: 70px;}
 
-#header .inner nav li:last-child{margin-right:0;}
-#header .inner nav li a{font-size: 1.7rem; color: #ffffff;}
 #header .inner .q_mn{float: right; margin-top: 40px;}
 #header .inner .q_mn a{width: 30px; float: left; margin-right: 20px;}
 #header .inner .q_mn a:last-child{margin-right: 0;}
-#header nav .depth1 > li{ margin-top: -9px; float: left;}
-#header nav .depth1 > li > a{display: block; line-height: 60px;  }
+
+
+#header nav .depth1 > li{float: left; text-align: center; margin-right: 60px; position: relative;}
+#header nav .depth1 > li:last-child{margin-right:0;}
+#header nav .depth1 > li > a{display: block; line-height: 60px; 
+        font-size: 1.7rem; color: #ffffff; }
 #header nav .depth1 > li > a:hover{color: #FFD50E;}
 #header nav .depth1 .sub{background-color: none;
-                   font-size: 0.5rem; 
-                   color: #fff;
+                   
                    width: 100%; height: auto;
                    padding: 10px 0 ;
                    position: absolute; 
-                   left: -60px;
-                   top: 50px;
+                   left: 0;
+                   top: 60;
                    display: none;
                    z-index: 999999999;
-                   margin-left: 40px;
-                   }
+                margin-left: 0;}
+#header nav .depth1 .sub a{font-size: 1.2rem; 
+                           color: #fff;}
+#header nav .depth1 .sub li{margin-bottom: 10px;}
 #header nav .depth1 ul a{font-size: 1.2rem;}
 #header nav .depth1 > li:hover ul{display: block;}
 
-#header nav .depth1 ul li{display: inline-block;padding: 0 20px;}
-#header nav .depth1
+
+#header .hr{width: 100%; border-bottom: 1px solid #fff; opacity: 0.8; 
+        position: absolute; left: 0; bottom: 0;}
 /*********************section1****************************/
 #sec1 img{width: 100%;}
 
@@ -85,39 +89,46 @@
 #sec3 .all_box div:nth-child(3n){margin-right: 0;}
 #sec3 .all_box div img{width: 100%; transition: all 0.8s;}
 #sec3 .all_box div img:hover{transform: scale(1.2);}
-#sec3 .all_box div p{position: absolute; color: #ffffff; font-size: 1.5rem; text-align: center;}
+#sec3 .all_box div p{position: absolute; color: #ffffff; 
+                     font-size:1.2rem; text-align: center;}
 /**/
 #sec3 .box1{ width: 34%; transform: translate(0 , 50px);
             /*position: absolute; top: 220px; left:90px;*/ }
 #sec3 .box1 a{display: block; width: 100%; overflow: hidden;}
-#sec3 .box1 p{transform: translate(120px , -70px);}        
+#sec3 .box1 img{width: 100%;}
+#sec3 .box1 p{transform: translate(140px , -60px);}        
        
 /**/
 #sec3 .box2{width: 27%; transform: translate(0 , 150px);
             /*position: absolute; top:300px; left:700px;*/}
 #sec3 .box2 a{display: block; width: 100%; overflow: hidden;}
-#sec3 .box2 p{transform: translate(80px , -50px);}           
+#sec3 .box2 img{width: 100%;}
+#sec3 .box2 p{transform: translate(100px , -50px);}           
 /**/
 #sec3 .box3{width: 31%; transform: translate(0 , 95px);
             /*position: absolute; top:160px; right: 170px;*/}
 #sec3 .box3 a{display: block; width: 100%; overflow: hidden;}
-#sec3 .box3 p{transform: translate(140px , -70px);}       
+#sec3 .box3 img{width: 100%;}
+#sec3 .box3 p{transform: translate(160px , -70px);}       
 
 /**/
-#sec3 .box4{width: 29%; transform: translate(-630px , 227px); 
+#sec3 .box4{width: 28%; transform: translate(-630px , 227px); 
             /*position: absolute; bottom: 220px; left:200px;*/}
 #sec3 .box4 a{display: block; width: 100%; overflow: hidden;}
-#sec3 .box4 p{transform: translate(75px , -75px);}   
+#sec3 .box4 img{width: 100%;}
+#sec3 .box4 p{transform: translate(100px , -75px);}   
 /**/
-#sec3 .box5{width: 36%; transform: translate(600px , -105px);
+#sec3 .box5{width: 35%; transform: translate(600px , -105px);
             /*position: absolute; bottom: 220px; right:550px;*/}
 #sec3 .box5 a{display: block; width: 100%; overflow: hidden;}
+#sec3 .box5 img{width: 100%;}
 #sec3 .box5 p{transform: translate(120px , -70px);}   
 /**/
-#sec3 .box6{width: 27%; transform: translate(580px , -105px);
+#sec3 .box6{width: 26%; transform: translate(580px , -105px);
             /*position: absolute; bottom: 120px; right:70px;*/}
 #sec3 .box6 a{display: block; width: 100%; overflow: hidden;}
-#sec3 .box6 p{transform: translate(130px , -70px);}   
+#sec3 .box6 img{width: 100%;}
+#sec3 .box6 p{transform: translate(150px , -70px);}   
 
 /*********************section4****************************/
 #sec4::after{content: ''; display: block; clear: both;}
@@ -126,13 +137,13 @@
         background-size: cover; position: relative;}
 #sec4 .swiper-container {
         float: left;
-        width: 700px;
-        height: 500px;
-        margin-top: 160px;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 160px;}
+        width: 550px;
+        height: 400px;
+        margin-top: 8.5%;
+        margin-left: 87px;
        
+        margin-bottom: 6%;}
+#sec4 .swiper-container img{width: 100%; height: 100%;}       
 #sec4 .swiper-slide {
         text-align: center;
         font-size: 18px;
@@ -159,24 +170,24 @@
         background-color: rgba(255, 255, 255, 0.8);}
 
 
-#sec4 .txt_box {float: left; margin-top: 150px;}
-#sec4 .txt_box h2{color: #fff;}
-#sec4 .txt_box .left{float: left; margin-top: 110px;}
-#sec4 .txt_box .left .info{font-size: 1.775rem; color: #fff; margin-bottom: 30px;}
-#sec4 .txt_box .left p{font-size: 1.25rem; margin-bottom: 60px; color: #fff; 
+#sec4 .txt_box {float: left; margin-top: 8%; margin-left: 2%;}
+#sec4 .txt_box h2{color: #fff; font-size: 1.6rem ;}
+#sec4 .txt_box .left{float: left; margin-top: 8%;}
+#sec4 .txt_box .left .info{font-size: 1.4rem; color: #fff; margin-bottom: 30px;}
+#sec4 .txt_box .left p{font-size: 1rem; margin-bottom: 60px; color: #fff; 
                        border-bottom: 1px solid #fff; padding-bottom: 65px;}
 #sec4 .txt_box .left p:last-child{border-bottom: none;}                       
                        
-#sec4 .txt_box .left .add{font-size: 1.775rem; color: #fff; }
-#sec4 .txt_box .left .add p{font-size: 1.25rem; }
-#sec4 .txt_box .right{float: left; margin-top: 110px; margin-left: 100px;}
-#sec4 .txt_box .right .up{font-size: 1.775rem; color: #fff;}
-#sec4 .txt_box .right p{font-size: 1.25rem; color: #fff; 
+#sec4 .txt_box .left .add{font-size: 1.4rem; color: #fff; }
+#sec4 .txt_box .left .add p{font-size: 1rem; }
+#sec4 .txt_box .right{float: left; margin-top: 5%; margin-left: 30px;}
+#sec4 .txt_box .right .up{font-size: 1.4rem; color: #fff;}
+#sec4 .txt_box .right p{font-size: 1rem; color: #fff; 
                         margin-top: 20px; margin-bottom: 20px;
                         border-bottom: 1px solid #fff; padding-bottom: 35px;}
 #sec4 .txt_box .right p:last-child{border-bottom: none;}                
-#sec4 .txt_box .right .mid{font-size: 1.775rem; color: #fff;}
-#sec4 .txt_box .right .down{font-size: 1.775rem; color: #fff;}
+#sec4 .txt_box .right .mid{font-size: 1.4rem; color: #fff;}
+#sec4 .txt_box .right .down{font-size: 1.4rem; color: #fff;}
 
 
 /*********************section5****************************/
@@ -188,9 +199,9 @@
             line-height: 30px; margin-left: 50px; margin-top: 30px;}
 #sec5 .more:hover{color: #fff; background-color: #FFD50E;}            
 #sec5 p{text-align: center; margin-top: 25px; margin-left: 5px;}
-#sec5 .sec5_pro{margin-left: 80px; margin-top: 40px;}            
-#sec5 .sec5_pro li{float: left; margin-left: 30px;}
-
+#sec5 .sec5_pro{margin-left:7%; margin-right:7%; margin-top: 40px;}            
+#sec5 .sec5_pro li{float: left; margin-left: 20px;}
+#sec5 .sec5_pro li:last-child{margin-left: 0;}
 #sec5 .sec5_pro img{margin-left: 30px;}
 
 
@@ -214,12 +225,34 @@
 
 
 /*브레이크포인트가 1180이하부터 적용될수 있도록 함 */
-@media all and (max-width:980px) {
-        #sec4 {background-image: url(../images/sec4/sec4_bg_m.png);
-                background-repeat: no-repeat;
-                background-size: cover; /*position: relative;*/}
-        #sec4 .txt_box {/*float: left;*/ margin-top: -150px;}
 
+
+@media all and (max-width:1180){
+        #sec4 .txt_box {float: right; /*margin-top: 7%;*/}
+        #sec4 .txt_box .right{ /*float: left; margin-top: 5%; margin-left: 50px;*/
+                               margin-left: 20px;}
+
+}
+
+@media all and (max-width:1078) {
+        #sec5 .sec5_pro{margin-left: 80px; margin-top: 40px;}   
+        #sec5 .sec5_pro li {
+                float: left; 
+                /* margin-left: 10px; */
+            }
+}
+@media all and (max-width:980px) {
+        
+        #header .inner .logo{width: 170px; height: 95px; 
+                float: left;  margin-left: 41%;/*margin-left: 30px;
+                margin-top: 10px;*/}
+              
+        
+        #sec4 {background-image: url(../images/sec4/sec4_bg_m.png);
+                background-repeat: no-repeat; mar
+                background-size: cover; /*position: relative;*/}
+        #sec4 .txt_box {/*float: left;*/ margin-top: -30px;}
+        #sec4 .txt_box .left{/*float: left;*/ margin-top: 80px;}
         #sec5 .sec5_pro{/*margin-left: 80px; margin-top: 40px;*/} 
-        #sec5 .sec5_pro li{/*float: left;*/ margin-top: 30px;} 
+        #sec5 .sec5_pro li{/*float: left;*/ margin-top: -30px;} 
 } 
