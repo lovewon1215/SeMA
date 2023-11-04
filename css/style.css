@@ -197,8 +197,8 @@
 #sec5 .more:hover{color: #fff; background-color: #FFD50E;}            
 #sec5 p{text-align: center; margin-top: 25px; margin-bottom: 20px; }
 #sec5 .sec5_pro{width: 1200px; display: flex; justify-content: center; margin-top: 30px;}            
-#sec5 .sec5_pro li{width: 170px;}
-#sec5 .sec5_pro li > .icon{display: block; padding-left: 22px;}
+#sec5 .sec5_pro li{width: 180px; margin: 0 auto;}
+#sec5 .sec5_pro li > .icon{display: block; text-align: center;}
 #sec5 .more{display: block; width: 80px; height: 30px; 
         border: 2px solid #FFD50E; text-align: center;
         line-height: 30px; margin: 0 auto;} 
@@ -212,7 +212,7 @@
 
 /*********************footer****************************/
 #footer::after{content: ''; display: block; clear: both;}
-#footer{background-color: #707070; padding-top: 70px; padding-bottom: 70px;}
+#footer{background-color: #707070; padding-top: 70px; }
 #footer .logo{float: left; margin-left: 125px; margin-right: 125px;}
 #footer .footer_info{float: left; }
 #footer .footer_info a{ margin-right: 30px; font-size: 1.1rem;
